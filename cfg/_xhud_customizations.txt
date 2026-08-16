@@ -1,0 +1,26 @@
+x{ 
+ScoreboardMainBG { ypos 145 tall 234 } RedPlayerList { ypos 145 tall 191 } BluePlayerList { ypos 145 tall 191 } 
+scores { medal_column_width 0 } 
+BuildingStatusAnchor { ypos 240 } 
+HudChat { ypos 25 } 
+HudChat { tall 86 } ChatFiltersButton { ypos 73 } 
+HealthBarLowHealth { ypos -68 } 
+HudPlayerClass { wide 500 } 
+FriendsContainer { visible 1 } 
+TeamIndicator { visible 0 } 
+UberTimerBG { visible 1 } UberTimer { visible 1 } 
+itempanel { wide 0 } 
+Speed1 { visible 0 } Speed10 { visible 0 } Speed100 { visible 0 } Speed1000 { visible 0 } 
+DamageAccountValue { xpos c18 ypos c75+10 textAlignment east } 
+DamageAccountValue { fgcolor Red } 
+AmmoInClipMini { visible 0 } AmmoInClipMiniShadow { visible 0 } 
+TransparentViewmodel { visible 0 } 
+Hitmarker { visible 1 } 
+Hitmarker { fgcolor Red } 
+Hitmarker { labelText / } 
+Hitmarker { font CrosshairL0 } 
+XCrosshair { visible 0 } 
+XCrosshair { fgcolor White } 
+XCrosshair { labelText # } 
+XCrosshair { font CrosshairM0 } 
+} 

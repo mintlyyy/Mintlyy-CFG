@@ -1,0 +1,16 @@
+"motd_entries"
+{
+	"last_request_time"		"2026-08-16 00:32:24"
+	"last_request_language"		"brazilian"
+	"125"
+	{
+		"post_time"		"2026-07-08 03:55:00"
+		"title_brazilian"		"Summer"
+		"text_brazilian"		"Summer brings new community content including maps, cosmetics, taunts, Unusual effects, and War Paints! The Summer event runs through September 15, 2026."
+		"url"		"http://www.teamfortress.com/post.php?id=274747"
+		"image"		"../vgui/main_menu/motd_meet_your_match"
+		"header_type"		"0"
+		"header_brazilian"		"News"
+		"header_icon"		"class_icons/filter_all_motd"
+	}
+}
