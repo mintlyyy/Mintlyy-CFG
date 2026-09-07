@@ -1,8 +1,0 @@
-recsettings 
-playermodelon 
-friendsliston 
-ubertimeron 
-hitmarkeron 
-hitmarker3 
-hitmarkerl0 
-hitmarkerlarge 

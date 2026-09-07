@@ -1,21 +1,72 @@
-# 🗡️ mintlyy-cfg
+# 🗡️ mintlyy-cfg v2 — Spy Main Edition
 
-Hi guys! This is just a simple TF2 configuration focused on playing as **Spy**. 🕵️‍♂️
+TF2 config focada em **Spy**, construída em cima do [mastercomfig](https://mastercomfig.com/).
 
-## 📌 Requirements & Recommendations
+## 📦 O que tem aqui
 
-To get the best experience with this config, make sure to check out:
+```
+cfg/
+└── overrides/          ← ÚNICA pasta que você instala (veja abaixo)
+    ├── autoexec.cfg    ← binds, aliases de movimento (null-cancel), HUD, mouse
+    ├── modules.cfg     ← gráficos, som e rede (módulos do mastercomfig)
+    ├── spy.cfg         ← disfarces rápidos com a arma certa, sapper, etc.
+    ├── soldier.cfg
+    ├── null.cfg / nonull.cfg   ← liga/desliga null-cancel no console
+    └── walkway.cfg     ← treino (digite "walkway" no console)
 
-* ⚙️ **[mastercomfig](https://mastercomfig.com/)** - Don't forget to install mastercomfig!
-* 🖥️ **LightHUD** - This is the HUD I use and recommend.
+cfg/config.cfg          ← backup dos SEUS binds (não precisa copiar; é referência)
+custom - Copy/          ← backup do seu tf/custom antigo (hitsounds, mastercomfig-base, etc.)
+```
 
-## 🛠️ How to Install
+## 🛠️ Instalação (correta para mastercomfig)
 
-1. Click on the green **Code** button at the top and click **Download ZIP**.
-2. Extract the files.
-3. Put the `cfg` files inside your TF2 folder:
-   `Steam\steamapps\common\Team Fortress 2\tf\custom\mintlyy-cfg\cfg`
-4. Open the game and enjoy!
+1. Tenha o **mastercomfig** instalado (baixe o preset *medium* ou *low* em
+   [mastercomfig.com](https://mastercomfig.com/) e jogue o `.vpk` em `tf/custom`).
+2. Copie a pasta **`cfg/overrides`** deste repo para dentro de **`tf/cfg/`** —
+   o resultado final deve ser:
+   ```
+   Team Fortress 2/tf/cfg/overrides/autoexec.cfg
+   Team Fortress 2/tf/cfg/overrides/modules.cfg
+   Team Fortress 2/tf/cfg/overrides/spy.cfg
+   ...
+   ```
+   ⚠️ **Não** coloque em `tf/custom/...` — com mastercomfig, configs de usuário
+   vivem em `tf/cfg/overrides/`. (A instalação antiga deste repo apontava o
+   caminho errado.)
+3. Opcional: restaure seus binds copiando o `config.cfg` do repo para `tf/cfg/`
+   (só em instalação nova — ele é sobrescrito pelo jogo normalmente).
+4. Abra o jogo. Se quiser conferir, abra o console e veja
+   `mintlyy-cfg v2 (SPY EDITION) CARREGADA`.
+
+## 🕹️ Comandos no console
+
+| Comando   | O que faz                                      |
+|-----------|------------------------------------------------|
+| `null`    | liga null-canceling movement                   |
+| `nonull`  | desliga null-canceling (movimento padrão)      |
+| `walkway` | carrega tr_walkway com settings de treino      |
+| `module_levels` | mostra os módulos mastercomfig ativos     |
+
+## ⌨️ Binds de Spy (rodando como Spy)
+
+| Tecla  | Ação                                            |
+|--------|-------------------------------------------------|
+| `F1`–`F9` | disfarce direto de inimigo já segurando a arma natural (F9 = Engineer, **novo**) |
+| `b` / `MOUSE4` | lastdisguise (re-disfarce instantâneo)   |
+| `MOUSE5` | saca o sapper (**fix**: antes era um comando inexistente) |
+| `1/2/3` | já disfarçado, troca a arma visível do disfarce |
+| scroll ↑↓ | pulo (bhop)                                   |
+
+## 📋 Changelog completo
+
+Veja [MELHORIAS.md](MELHORIAS.md) — lista todos os bugs corrigidos e melhorias
+da v2 (fps cap certo pro seu monitor de 80Hz, som consertado, rede limpa,
+disguise com arma certa, etc.).
+
+## 📌 Recomendados
+
+* [mastercomfig](https://mastercomfig.com/) — obrigatório
+* **bxhud-sayo** ([tf2huds.dev/hud/bxhud-sayo](https://tf2huds.dev/hud/bxhud-sayo)) — o HUD que eu uso (BX HUD, edit xcd859 "sayo"). HUD vai em `tf/custom/`, não conflita com esta config
 
 ---
-*Made by mintlyy*
+*Made by mintlyy — v2 melhorada com foco Spy 🕵️*
